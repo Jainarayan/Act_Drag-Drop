@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width= device-width, initial-scale=1.0" /><!--The viewport is the user's visible area of the web page.-->
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+</head>
+<body>
+<!-- Main Content Page-->
+<div id="startContainer">
+		<img id="mainStart" src="images/start.gif" draggable="false" />		
+	</div>
+<div id="mainContainer">	 
+	<div class="title-bar">
+		<div class="title-content">fp=ksa ds uke cksfy, vkSj “kq: ds o.kZ fyf[k,A</div>
+	</div>
+	<div id="top-box" id="left">	
+		<!-- Options -->
+		<div id="content-box">			
+			<!-- Option 1 -->
+			<div id="option1" class="options-outer">
+				<div class="options-inner">
+					<img id="opt1" src="images/opt1.png" draggable="false"/>
+				</div>
+			</div>
+						
+			<!-- Option 2 -->
+			<div id="option2" class="options-outer">
+				<div class="options-inner">
+					<img id="opt2" src="images/opt2.png" draggable="false"/>
+				</div>
+			</div>
+						
+			<!-- Option 3 -->
+			<div id="option3" class="options-outer">
+				<div class="options-inner">
+					<img id="opt3" src="images/opt3.png" draggable="false"/>
+				</div>
+			</div>
+			<!-- Option 4 -->
+			<div id="option4" class="options-outer">
+				<div class="options-inner">
+					<img id="opt4" src="images/opt4.png" draggable="false"/>
+				</div>
+			</div>					
+		</div>
+		
+		<!-- Drop Area -->
+		<div class="drop-area">
+			<div id="drop-box1" class="drop-box dropItem">
+				<div class="drag-boxes" id="">x</div>
+			</div>
+			<div id="drop-box2" class="drop-box dropItem">
+				<div class="drag-boxes" id="">?k</div>
+			</div>
+			<div id="drop-box3" class="drop-box dropItem">
+				<div class="drag-boxes" id="">d</div>
+			</div>
+			<div id="drop-box4" class="drop-box dropItem">
+				<div class="drag-boxes" id="">[k</div>
+			</div>
+		</div>			
+		
+		<!-- Drag Area -->
+		<div class="drag-area">
+			<div id="" class="boxes">
+				<div class="dragItem drag-box" id="drag-box1">d</div>
+			</div>
+			<div id="" class="boxes">
+				<div class="dragItem drag-box" id="drag-box2">[k</div>
+			</div>
+			<div id="" class="boxes">
+				<div class="dragItem drag-box" id="drag-box3">x</div>
+			</div>
+			<div id="" class="boxes">
+				<div class="dragItem drag-box" id="drag-box4">?k</div>
+			</div>			
+		</div>			
+		
+		<!-- Bottom buttons -->
+		<div id="bottomButtons">
+			<div id="show"><img id="show-img" src="images/show-1.png" draggable="false"/></div>
+			<div id="refresh"><img id="refresh-img" src="images/refresh-1.png" draggable="false"/></div>
+		</div>
+		<iframe id="iframe1" src="gifs/First/First.html"  width="30%" height="45%" style=" position: absolute; bottom: -1vmin; right: -6vmin; border: 0; z-index: -1;"></iframe>
+		<iframe id="iframe2" src="gifs/Correct/Correct.html"  width="30%" height="45%" style=" position: absolute; bottom: -2vmin; right: -5vmin; border: 0; z-index: -1;"></iframe>
+		<iframe id="iframe3" src="gifs/Incorrect/Incorrect.html"  width="30%" height="45%" style=" position: absolute; bottom: -2vmin; right: -6vmin; border: 0; z-index: -1;"></iframe>
+	</div>	
+	<div id="hideContainer"></div>
+</div>
+
+<!-- Result Page -->
+<div id="resultContainer">	 
+	<div class="result-title">
+		<div class="result-title-content">vad rkfydk</div>
+	</div>
+	<div id="result-content-box">
+		<div class="result-content">dqy<span id="totalCount">0</span></div></div>
+	<div id="result-content-box">
+		<div class="result-content">lgh<span id="totalCorrect">0</span></div>
+	</div>
+	<div id="result-content-box">
+		<div class="result-content">xyr<span id="totalIncorrect">0</span></div>
+	</div>
+	<div id="result-refresh">
+		<div class="result-refresh-content">iqu% djs</div>
+	</div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html> 
+
