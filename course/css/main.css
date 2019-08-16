@@ -188,7 +188,7 @@ body{
 /* 	text-align: -webkit-center;
 	text-align: -moz-center; */	
 }
-.drag-boxes{
+.drop-boxes{
 	width: 6vmin;
     height: 7.5vmin;
     margin-left: 9vmin;

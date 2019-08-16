@@ -36,7 +36,7 @@
 			
 			//audio2.pause();
 			
-	
+		audio2.pause();
 
 		}
 	});
@@ -62,7 +62,7 @@
 									'margin': '-7.3vmin 10vmin',
 									'z-index': '-1'
 								});	
-			/* 	$(this).children('.drag-boxes').css('visibility','visible'); */
+			/* 	$(this).children('.drop-boxes').css('visibility','visible'); */
 				correct++;
 				count++;
 				console.log('correct: ' +correct);
@@ -118,7 +118,7 @@
 									'margin': '-7.3vmin 10vmin',
 									'z-index': '-1'
 								});									   
-			/* 	$(this).children('.drag-boxes').css('visibility','visible'); */
+			/* 	$(this).children('.drop-boxes').css('visibility','visible'); */
 				correct++;
 				count++;
 				console.log('correct: ' +correct);
@@ -165,7 +165,7 @@
 									'margin': '-7.3vmin 10vmin',
 									'z-index': '-1'
 								});								   
-				/* $(this).children('.drag-boxes').css('visibility','visible'); */
+				/* $(this).children('.drop-boxes').css('visibility','visible'); */
 				correct++;
 				count++;
 				console.log('correct: ' +correct);
@@ -209,7 +209,7 @@
 									'margin': '-7.3vmin 10vmin',
 									'z-index': '-1'
 								});								   
-				/* $(this).children('.drag-boxes').css('visibility','visible'); */
+				/* $(this).children('.drop-boxes').css('visibility','visible'); */
 				correct++;
 				count++;
 				console.log('correct: ' +correct);
