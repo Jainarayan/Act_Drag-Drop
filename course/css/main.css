@@ -366,6 +366,7 @@ body{
     z-index: 100;
     width: 58%;
 	top: 54.8vmin;
+	z-index:-1;
 }
 #show, #refresh{
 	position: absolute;

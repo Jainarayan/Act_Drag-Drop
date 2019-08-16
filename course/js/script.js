@@ -34,8 +34,6 @@
 			      .mouseout(function(){ $('#show-img').attr('src','./images/show-1.png'); })
 				  .css('cursor', 'pointer');
 			$('#show').css('opacity', '1');
-			
-			//audio2.pause();
 		
 		}
 	});
