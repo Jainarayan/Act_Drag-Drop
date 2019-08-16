@@ -36,7 +36,7 @@
 			
 			//audio2.pause();
 			
-		audio2.pause();
+	
 
 		}
 	});
