@@ -42,15 +42,10 @@
 		tolerance: 'pointer',
 		drop: function(ev,ui){
 			var div = $(this).attr('id');
-			/* console.log(div)
-			console.log($(ui.draggable).text()); */
 			if(!$(this).hasClass("drop") && ($(ui.draggable).text()=="x")){				
 				dropitem = $(ui.draggable);							
 				$(this).append(dropitem).addClass("drop");
-				/* var a=$(this).attr('id'); */
 				dropped=true;
-				/* console.log(a);
-				console.log(ev.target.className); */
 				$(ui.draggable).appendTo($(this));
 				$(ui.draggable).addClass('dropped');
 				$(ui.draggable).css({                
@@ -59,11 +54,8 @@
 									'margin': '-7.3vmin 10vmin',
 									'z-index': '-1'
 								});	
-			/* 	$(this).children('.drop-boxes').css('visibility','visible'); */
 				correct++;
 				count++;
-				console.log('correct: ' +correct);
-				console.log('count: ' +count);
 				corr();
 				if($(ui.draggable).hasClass('dropped')){
 					$(ui.draggable).prop('disabled', true);
@@ -79,19 +71,10 @@
 				}
 			}			
 			else{
-				/* setTimeout(function(){
-					
-					$(ui.draggable).css({                
-						'top': '0vmin',
-						'left': '0vmin'
-					});		
-				}, 3500); */
 				$(ui.draggable).draggable('option','revert',true);
 				dropped=false;
 				incorrect++;
-				console.log('incorrect: ' +incorrect);
 				count++;
-				console.log('count: ' +count);
 				incorr();
 			
 			}
@@ -102,7 +85,6 @@
 		tolerance: 'pointer',
 		drop: function(ev,ui){
 			var div = $(this).attr('id');
-			console.log($(ui.draggable).text());
 			if(!$(this).hasClass("drop") && ($(ui.draggable).text()=="?k")){				
 				dropitem = $(ui.draggable);							
 				$(this).append(dropitem).addClass("drop");
@@ -115,11 +97,8 @@
 									'margin': '-7.3vmin 10vmin',
 									'z-index': '-1'
 								});									   
-			/* 	$(this).children('.drop-boxes').css('visibility','visible'); */
 				correct++;
 				count++;
-				console.log('correct: ' +correct);
-				console.log('count: ' +count);
 				corr();
 				if($(ui.draggable).hasClass('dropped')){
 					$(ui.draggable).prop('disabled', true);
@@ -138,9 +117,7 @@
 				$(ui.draggable).draggable('option','revert',true);
 				dropped=false;
 				incorrect++;
-				console.log('incorrect: ' +incorrect);
 				count++;
-				console.log('count: ' +count);
 				incorr();							
 			}
 		}
@@ -162,11 +139,8 @@
 									'margin': '-7.3vmin 10vmin',
 									'z-index': '-1'
 								});								   
-				/* $(this).children('.drop-boxes').css('visibility','visible'); */
 				correct++;
 				count++;
-				console.log('correct: ' +correct);
-				console.log('count: ' +count);
 				corr();
 				if(correct == 4){
 					$(audio3).on('ended', function(){
@@ -182,9 +156,7 @@
 				$(ui.draggable).draggable('option','revert',true);
 				dropped=false;
 				incorrect++;
-				console.log('incorrect: ' +incorrect);
 				count++;
-				console.log('count: ' +count);
 				incorr();							
 			}
 		}
@@ -206,11 +178,8 @@
 									'margin': '-7.3vmin 10vmin',
 									'z-index': '-1'
 								});								   
-				/* $(this).children('.drop-boxes').css('visibility','visible'); */
 				correct++;
 				count++;
-				console.log('correct: ' +correct);
-				console.log('count: ' +count);
 				corr();
 				if(correct == 4){
 					$(audio3).on('ended', function(){
@@ -226,10 +195,8 @@
 				$(ui.draggable).draggable('option','revert',true);
 				dropped=false;
 				incorrect++;
-				console.log('incorrect: ' +incorrect);
 				count++;
-				console.log('count: ' +count);
-				incorr();				
+				incorr();					
 			}
 		}
 	});	
