@@ -22,6 +22,8 @@
 	$('.drag-box').mouseover(function(){
 		audio2.play();
 	})
+
+
 		
 	$('.dragItem').draggable({
 		revert: 'invalid',
@@ -31,6 +33,11 @@
 			      .mouseout(function(){ $('#show-img').attr('src','./images/show-1.png'); })
 				  .css('cursor', 'pointer');
 			$('#show').css('opacity', '1');
+			
+			//audio2.pause();
+			
+		audio2.pause();
+
 		}
 	});
 	
@@ -47,13 +54,15 @@
 				dropped=true;
 				/* console.log(a);
 				console.log(ev.target.className); */
-				$(ui.draggable).css('visibility','hidden')
-							   .addClass('dropped')
-							   .css({                
+				$(ui.draggable).appendTo($(this));
+				$(ui.draggable).addClass('dropped');
+				$(ui.draggable).css({                
 									'top': '0vmin',
-									'left': '0vmin'
+									'left': '0vmin',
+									'margin': '-7.3vmin 10vmin',
+									'z-index': '-1'
 								});	
-				$(this).children('.drag-boxes').css('visibility','visible');
+			/* 	$(this).children('.drag-boxes').css('visibility','visible'); */
 				correct++;
 				count++;
 				console.log('correct: ' +correct);
@@ -86,7 +95,8 @@
 				console.log('incorrect: ' +incorrect);
 				count++;
 				console.log('count: ' +count);
-				incorr();							
+				incorr();
+			
 			}
 		}
 	});	
@@ -100,13 +110,15 @@
 				dropitem = $(ui.draggable);							
 				$(this).append(dropitem).addClass("drop");
 				dropped=true;
-				$(ui.draggable).css('visibility','hidden')
-							   .addClass('dropped')
-							   .css({                
+				$(ui.draggable).appendTo($(this));
+				$(ui.draggable).addClass('dropped');
+				$(ui.draggable).css({                
 									'top': '0vmin',
-									'left': '0vmin'
-								});								   
-				$(this).children('.drag-boxes').css('visibility','visible');
+									'left': '0vmin',
+									'margin': '-7.3vmin 10vmin',
+									'z-index': '-1'
+								});									   
+			/* 	$(this).children('.drag-boxes').css('visibility','visible'); */
 				correct++;
 				count++;
 				console.log('correct: ' +correct);
@@ -145,13 +157,15 @@
 				dropitem = $(ui.draggable);							
 				$(this).append(dropitem).addClass("drop");
 				dropped=true;
-				$(ui.draggable).css('visibility','hidden')
-							   .addClass('dropped')
-							   .css({                
+				$(ui.draggable).appendTo($(this));
+				$(ui.draggable).addClass('dropped');
+				$(ui.draggable).css({                
 									'top': '0vmin',
-									'left': '0vmin'
+									'left': '0vmin',
+									'margin': '-7.3vmin 10vmin',
+									'z-index': '-1'
 								});								   
-				$(this).children('.drag-boxes').css('visibility','visible');
+				/* $(this).children('.drag-boxes').css('visibility','visible'); */
 				correct++;
 				count++;
 				console.log('correct: ' +correct);
@@ -187,13 +201,15 @@
 				dropitem = $(ui.draggable);							
 				$(this).append(dropitem).addClass("drop");
 				dropped=true;
-				$(ui.draggable).css('display','none')
-							   .addClass('dropped')
-							   .css({                
+				$(ui.draggable).appendTo($(this));
+				$(ui.draggable).addClass('dropped');
+				$(ui.draggable).css({                
 									'top': '0vmin',
-									'left': '0vmin'
+									'left': '0vmin',
+									'margin': '-7.3vmin 10vmin',
+									'z-index': '-1'
 								});								   
-				$(this).children('.drag-boxes').css('visibility','visible');
+				/* $(this).children('.drag-boxes').css('visibility','visible'); */
 				correct++;
 				count++;
 				console.log('correct: ' +correct);
