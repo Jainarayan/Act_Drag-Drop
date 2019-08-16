@@ -84,9 +84,9 @@
 			<div id="show"><img id="show-img" src="images/show-1.png" draggable="false"/></div>
 			<div id="refresh"><img id="refresh-img" src="images/refresh-1.png" draggable="false"/></div>
 		</div>
-		<iframe id="iframe1" src="gifs/First/First.html"  width="30%" height="45%" style=" position: absolute; bottom: -1vmin; right: -6vmin; border: 0; z-index: -1;"></iframe>
-		<iframe id="iframe2" src="gifs/Correct/Correct.html"  width="30%" height="45%" style=" position: absolute; bottom: -2vmin; right: -5vmin; border: 0; z-index: -1;"></iframe>
-		<iframe id="iframe3" src="gifs/Incorrect/Incorrect.html"  width="30%" height="45%" style=" position: absolute; bottom: -2vmin; right: -6vmin; border: 0; z-index: -1;"></iframe>
+		<iframe id="iframe1" src="gifs/First/First.html"  width="30%" height="45%" style=" position: absolute; bottom: -1vmin; right: -6vmin; border: 0; z-index: 0;"></iframe>
+		<iframe id="iframe2" src="gifs/Correct/Correct.html"  width="30%" height="45%" style=" position: absolute; bottom: -2vmin; right: -5vmin; border: 0; z-index: 0;"></iframe>
+		<iframe id="iframe3" src="gifs/Incorrect/Incorrect.html"  width="30%" height="45%" style=" position: absolute; bottom: -2vmin; right: -6vmin; border: 0; z-index: 0;"></iframe>
 	</div>	
 	<div id="hideContainer"></div>
 </div>
@@ -111,8 +111,9 @@
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.js"></script>
 <script src="js/script.js"></script>
-
+<script>$('#widget').draggable();</script>
 </body>
 </html> 
 

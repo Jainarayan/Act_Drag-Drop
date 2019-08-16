@@ -111,14 +111,14 @@ body{
 	left: 13vmin;    
 }
 #opt1{
-	width: 30vmin;
+	width: 29vmin;
     margin-top: 2vmin;
 }
 #option2{
 	left: 51vmin;
 }
 #opt2{
-	width: 24vmin;
+	width: 23vmin;
 }
 #option3{
 	left: 88.5vmin;
@@ -130,7 +130,7 @@ body{
 	left: 126vmin;
 }
 #opt4{
-	width: 30vmin;
+	width: 29vmin;
 }
 .drag-area{
 	position: relative;
@@ -401,17 +401,69 @@ body{
     top: 2.4vmin;
     left: 2.6vmin;
 }
-@-moz-document url-prefix() { 
-	.options {
-		padding-right: 14vmin;
+
+@media(max-width:896px){
+	.options-inner{
+		width: 31.2vmin;
+		height: 25.2vmin;
 	}
 }
-
-
-_::-webkit-full-page-media, _:future, :root .options {
-
- padding-right: 12vmin;
-
+@media(max-width: 650px){
+	.options-inner{
+		width: 31vmin;
+		height: 25vmin;
+	}
 }
-
-_:-ms-fullscreen, :root .options { padding-right: 13vmin; }
+@media(max-width: 550px){
+	.options-inner{
+		width: 30.5vmin;
+		height: 24.6vmin;
+	}
+	#opt1{
+		width: 27vmin;
+	}
+	#opt2{
+		width: 22vmin;
+	}
+	#opt3{
+		width: 30.1vmin;
+	}	
+	#opt4{
+		width: 27vmin;
+	}
+}
+@media(max-width: 420px){
+	#opt2{
+		width: 21vmin;
+	}
+	#opt3{
+		width: 28vmin;
+	}	
+	#opt4{
+		width: 26vmin;
+	}
+}
+@media(max-width: 400px){
+	.options-inner{
+		width: 30.2vmin;
+		height: 24.3vmin;
+	}
+}
+@media(max-width: 330px){
+	.options-inner{
+		width: 30vmin;
+		height: 24vmin;
+	}
+	#opt1{
+		width: 26vmin;
+	}
+	#opt2{
+		width: 21vmin;
+	}
+	#opt3{
+		width: 27vmin;
+	}	
+	#opt4{
+		width: 25vmin;
+	}
+}
