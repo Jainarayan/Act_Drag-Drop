@@ -28,7 +28,7 @@
 	$('.dragItem').draggable({
 		stack: '.dragItem',
 		revert: 'invalid',
-		containment: '#top-box',
+		containment: '#option-container',
 		drag: function(event, ui) {
 			$('#show').mouseover(function(){ $('#show-img').attr('src','./images/show-2.png'); audio2.play();})
 			      .mouseout(function(){ $('#show-img').attr('src','./images/show-1.png'); })

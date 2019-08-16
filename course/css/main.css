@@ -366,7 +366,6 @@ body{
     z-index: 100;
     width: 58%;
 	top: 54.8vmin;
-	z-index:-1;
 }
 #show, #refresh{
 	position: absolute;
@@ -400,6 +399,17 @@ body{
     position: absolute;
     top: 2.4vmin;
     left: 2.6vmin;
+}
+#option-container{
+	position: absolute;
+    width: 90%;
+    top: 20vmin;
+    z-index: 68;
+    height: 65vmin;
+    left: 10vmin;
+    border-radius: 45px 10px 20px;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
 }
 
 @media(max-width:896px){
