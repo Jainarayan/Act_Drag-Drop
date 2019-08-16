@@ -26,6 +26,7 @@
 
 		
 	$('.dragItem').draggable({
+		stack: '.dragItem',
 		revert: 'invalid',
 		containment: '#top-box',
 		drag: function(event, ui) {
@@ -35,9 +36,7 @@
 			$('#show').css('opacity', '1');
 			
 			//audio2.pause();
-			
-		audio2.pause();
-
+		
 		}
 	});
 	
